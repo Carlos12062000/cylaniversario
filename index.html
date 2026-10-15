@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff4c8">
+<title>Dos años contigo · 19.10.24 — 19.10.26</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app-root">
+  <header class="topbar">
+    <div class="brand">19.10.2024 · NUESTRA FECHA ♡</div>
+    <nav class="top-actions" aria-label="Navegación">
+      <button class="btn" id="musicTop">♫ Nuestra canción</button>
+      <button class="btn" id="editButton">✎ Personalizar</button>
+    </nav>
+  </header>
+  <main hidden>
+    <section class="hero" id="inicio">
+      <span class="sparkle s1">✧</span><span class="sparkle s2">✦</span><span class="sparkle s3">✧</span><span class="sparkle s4">✦</span>
+      <div class="hero-inner">
+        <div class="heart-orbit"><span class="big-heart">♥</span></div>
+        <div class="eyebrow" id="eyebrow" contenteditable="false">para celebrar lo nuestro</div>
+        <h1 id="heroTitle" contenteditable="false">A ti,<br><em>mi lugar favorito.</em></h1>
+        <p class="lead" id="heroLead" contenteditable="false">Hay historias bonitas, y luego está la nuestra: esa que quiero seguir escribiendo contigo, un abrazo y mil recuerdos a la vez.</p>
+        <div class="hero-buttons">
+          <button class="btn primary" id="openLetter">Leer mi carta ♥</button>
+          <button class="btn" id="goGallery">Ver nuestros recuerdos ↓</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="carta">
+      <div class="section-head"><div class="kicker">con todo mi corazón</div><h2>Unas palabras para ti</h2><p class="section-desc">Porque a veces lo que siento es tan grande que quiero dejarlo escrito, para que puedas volver a él cuando quieras.</p></div>
+      <article class="letter-card">
+        <p id="letterGreeting" contenteditable="false">Mi amor bonito:</p>
+        <p id="letterP1" contenteditable="false">Si pudiera volver al momento en que nuestras vidas se encontraron, volvería a elegir acercarme a ti. No porque todo tenga que ser perfecto, sino porque contigo hasta los días normales tienen algo especial.</p>
+        <p id="letterP2" contenteditable="false">Gracias por tus abrazos, por las risas que nos salen sin planearlas, por escucharme y por dejarme conocerte un poquito más cada día. Me enamoran tus detalles, tu forma de ver el mundo y esa manera tan tuya de hacerme sentir en casa.</p>
+        <p id="letterP3" contenteditable="false">Hoy celebro lo que hemos vivido y también todo lo que todavía nos espera: los lugares por conocer, las fotos que nos faltan, las canciones que algún día serán nuestras y las pequeñas aventuras que solo tienen sentido si las comparto contigo.</p>
+        <p id="letterP4" contenteditable="false">No te prometo una historia sin días difíciles; te prometo ganas de cuidar lo nuestro, de hablar, de aprender y de seguir escogiendo este amor con ternura y honestidad.</p>
+        <p id="letterP5" contenteditable="false">Feliz aniversario, mi vida. Qué suerte coincidir contigo. Qué bonito poder decir: de todas las personas, mi corazón encontró en ti un lugar donde quedarse.</p>
+        <div class="signature" id="signature" contenteditable="false">Con todo mi amor, siempre ♡</div>
+      </article>
+    </section>
+
+    <section class="section" id="capitulos">
+      <div class="section-head"><div class="kicker">nuestros pequeños grandes momentos</div><h2>Capítulos favoritos</h2><p class="section-desc">Lo nuestro vive en los grandes días, pero también en esos detalles chiquitos que quizá nadie más notaría.</p></div>
+      <div class="memory-grid">
+        <article class="memory"><div class="number">01 ♡</div><h3 contenteditable="false" id="memory1Title">Cuando empezó todo</h3><p contenteditable="false" id="memory1Text">Ese primer momento en que algo hizo clic, y sin saberlo todavía, empezamos a construir nuestra historia.</p></article>
+        <article class="memory"><div class="number">02 ✨</div><h3 contenteditable="false" id="memory2Title">Nuestras risas</h3><p contenteditable="false" id="memory2Text">Las bromas que solo entendemos nosotros, las miradas cómplices y la felicidad que aparece sin avisar.</p></article>
+        <article class="memory"><div class="number">03 🌙</div><h3 contenteditable="false" id="memory3Title">Todo lo que viene</h3><p contenteditable="false" id="memory3Text">Muchos planes, sueños por cumplir y un montón de recuerdos que todavía no existen, pero que quiero vivir contigo.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="galeria">
+      <div class="section-head"><div class="kicker">instantes que guardaría mil veces</div><h2>Nuestra pequeña galería</h2><p class="section-desc">Agrega esas fotos que te hacen sonreír apenas las ves. Puedes seleccionar varias al mismo tiempo.</p></div>
+      <div class="gallery" id="gallery">
+        <div class="photo"><div class="placeholder"><span class="camera">♡</span><span>Nuestra primera foto favorita</span></div></div>
+        <div class="photo"><div class="placeholder"><span class="camera">✧</span><span>Un día que repetiría</span></div></div>
+        <div class="photo"><div class="placeholder"><span class="camera">☼</span><span>Tu sonrisa, mi debilidad</span></div></div>
+      </div>
+      <div class="gallery-tools"><label class="btn primary" for="photoInput">＋ Agregar nuestras fotos</label><input id="photoInput" type="file" accept="image/*" multiple><button class="btn" id="resetGallery">Restaurar espacios</button></div>
+    </section>
+
+    <section class="section" id="cancion">
+      <div class="section-head"><div class="kicker">dale play a un recuerdo</div><h2>La banda sonora de nosotros</h2><p class="section-desc">Pon esa canción que te recuerda a mí. Por las restricciones del navegador, la música empieza solo cuando tú la reproduces.</p></div>
+      <div class="audio-panel">
+        <div class="vinyl" id="vinyl">♥</div>
+        <div class="audio-info"><strong id="songName">Nuestra canción</strong><small id="songHint">Elige un archivo de audio desde tu dispositivo para escucharla aquí.</small></div>
+        <div class="audio-buttons"><label class="btn" for="audioInput">Elegir canción</label><input id="audioInput" type="file" accept="audio/*"><button class="btn primary" id="playButton">▶ Reproducir</button></div>
+        <audio id="audio" controls loop></audio>
+      </div>
+    </section>
+
+    <section class="counter-wrap" id="tiempo">
+      <div class="kicker">cada día cuenta</div>
+      <div class="counter-number" id="daysCount">∞</div>
+      <div class="counter-label" id="daysLabel">razones para seguir eligiéndote</div>
+      <div class="date-row"><label for="startDate">Nuestra historia comenzó el</label><input id="startDate" type="date" aria-label="Fecha en que empezó nuestra historia"></div>
+    </section>
+
+    <section class="secret" id="sorpresa">
+      <div class="kicker">psst... tengo algo más para ti</div><h2>Una última cosita</h2>
+      <p class="section-desc">Porque nunca me canso de recordarte lo importante que eres para mí.</p>
+      <button class="btn primary" id="secretButton">Abrir mi secreto ♡</button>
+      <div class="secret-note" id="secretNote" contenteditable="false">Si algún día dudas de lo mucho que te amo, vuelve aquí. En este universo pequeñito dejé una verdad enorme: eres una de mis casualidades favoritas, mi alegría en días grises y una persona con la que quiero seguir creando recuerdos. Gracias por ser tú. Te amo más de lo que estas palabras alcanzan a contar. ♡</div>
+    </section>
+  </main>
+  <main class="anniv-page" id="annivPage">
+    <section class="anniv-hero" id="annivInicio">
+      <p class="anniv-date" contenteditable="false">19 DE OCTUBRE DE 2026</p>
+      <h1 contenteditable="false">Hoy se cumplen<br><em>dos años juntos</em></h1>
+      <p class="anniv-intro" contenteditable="false">El 19 de octubre de 2024 empezó nuestra historia, una historia cargada de muchos buenos momentos los cuales quiero que siempre recordemos.</p>
+      <div class="anniv-actions">
+        <button class="gold" id="annivReadLetter">Te escribí esta carta ↓</button>
+        <button id="annivJumpGallery">Nuestros mejores momentos ♡</button>
+      </div>
+    </section>
+
+
+    <section class="anniv-section" id="annivCarta">
+      <article class="anniv-letter">
+        <p contenteditable="false">Mi mona linda,</p>
+        <p contenteditable="false">Hace dos años mi vida era completamente distinta, de repente te cruzaste y me hiciste sentir el amor de una manera muy madura, arrolladora, paciente, y sobre todo certera.</p>
+        <p contenteditable="false">Agradezco mucho a la vida y a Dios por cruzarnos en el camino, por poner todo a nuestro favor para conocernos en el momento exacto, tú eres la muestra viviente de la frase “todo pasa por algo”. Habían muchas cosas que no entendía la razón de que pasaran, sin embargo, hoy en día las comprendo y las agradezco profundamente.</p>
+        <p contenteditable="false">Siempre me dices que soy una persona muy madura, y aunque hay algo de cierto en eso, realmente creo que he madurado para poder estar a tu altura, porque te amo, porque quiero que lo nuestro funcione, y sobre todo porque sabía que para estar contigo debía tener la seriedad que algo como lo que tenemos ahora necesita.</p>
+        <p contenteditable="false">Deseo compartir el resto de los días que me queden en la tierra contigo, y te prometo que estoy dispuesto a hacer lo necesario para que eso sea así. Espero que Dios siempre bendiga nuestra relación, que nos guíe por el mejor camino, y que nos brinde las herramientas necesarias para que este deseo que sé que es compartido se cumpla.</p>
+        <p contenteditable="false">No creas que me he olvidado de la promesa que te hice de cambiar tu anillo de promesa por uno de compromiso, que formemos un hogar es una de mis metas más importantes en la vida, y eso empieza sellando nuestro amor ante Dios y ante las personas más cercanas, espero que no falte mucho para cumplir esta promesa.</p>
+        <p contenteditable="false">Feliz aniversario, amor. Gracias por estos dos años.</p>
+        <div class="anniv-signature" contenteditable="false">Un beso enorme. ♡</div>
+      </article>
+    </section>
+
+    <section class="anniv-section" id="annivGaleriaSection">
+      <h2 class="anniv-heading" contenteditable="false">Nuestros mejores recuerdos</h2>
+    
+      <div class="anniv-carousel" id="annivGallery" aria-live="polite">
+        <div class="anniv-slide is-active"><div class="anniv-placeholder"><span class="placeholder-symbol">01</span><strong>Una foto de nosotros</strong><small>Este espacio es para uno de tus recuerdos favoritos.</small></div></div>
+        <div class="anniv-slide"><div class="anniv-placeholder"><span class="placeholder-symbol">02</span><strong>Un día que repetiríamos</strong><small>Agrega otra foto que te guste mucho.</small></div></div>
+        <div class="anniv-slide"><div class="anniv-placeholder"><span class="placeholder-symbol">03</span><strong>Otra de nuestras historias</strong><small>Y todas las que todavía nos faltan.</small></div></div>
+      </div>
+      <div class="anniv-gallery-controls">
+        <button class="anniv-arrow" id="annivPrev" aria-label="Foto anterior">←</button>
+        <span id="annivSlideCount">01 / 03</span>
+        <button class="anniv-arrow" id="annivNext" aria-label="Foto siguiente">→</button>
+        <span class="anniv-gallery-status" id="annivGalleryStatus"></span>
+      </div>
+      <input id="annivPhotoInput" type="file" accept="image/*" multiple>
+
+      <div class="anniv-player" id="annivSong">
+        <div class="anniv-player-top">
+          <div class="anniv-disc" id="annivDisc" aria-hidden="true">♫</div>
+          <div><p class="anniv-track-title" id="annivTrackTitle">Te amo mucho</p><p class="anniv-track-hint" id="annivTrackHint">Gracias por elegirme en estos dos años, no le temas a nada porque aquí estoy yo y soy tu complemento.</p></div>
+        </div>
+        <div class="anniv-player-controls">
+          <input id="annivAudioInput" type="file" accept="audio/*">
+          <button class="gold" id="annivPlay">▶ ¡Te dedico esta canción!</button>
+        </div>
+        <audio id="annivAudio" src="audio/nuestra-cancion.mp3" loop preload="metadata"></audio>
+      </div>
+    </section>
+
+  
+
+    <section class="anniv-section" id="annivSorpresa">
+      <div class="anniv-gift">
+        <div class="anniv-gift-icon" aria-hidden="true">✉</div>
+        <h2 class="anniv-heading" contenteditable="false">Este es mi regalo por nuestro aniversario</h2>
+        <p class="anniv-subcopy" contenteditable="false">Esta parte no te la quería contar desde el principio, pero sé que te va a gustar.</p>
+        <button class="anniv-button gold" id="annivGiftButton">Abrir regalo ♡</button>
+        <div class="anniv-gift-note" id="annivGiftNote" aria-live="polite">
+          <span class="anniv-trip-date">24 y 25 de octubre de 2026</span>
+          <h2 class="anniv-heading" contenteditable="false">¡Nos vamos a Bucaramanga!</h2>
+          <p contenteditable="false">Quiero que salgamos un poquito de la rutina, paseemos, celebremos y conozcamos lugares juntos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="anniv-countdown" id="annivTiempo">
+      <h2 class="anniv-heading" contenteditable="false">¿Cuánto falta para nuestros 3 años?</h2>
+      <p class="anniv-subcopy" contenteditable="false">La cuenta regresiva ya empezó.</p>
+      <div class="anniv-clock" role="timer" aria-label="Tiempo restante para nuestro próximo aniversario">
+        <div class="anniv-clock-cell"><span class="anniv-clock-value" id="annivDays">—</span><span class="anniv-clock-label">Días</span></div>
+        <div class="anniv-clock-cell"><span class="anniv-clock-value" id="annivHours">—</span><span class="anniv-clock-label">Horas</span></div>
+        <div class="anniv-clock-cell"><span class="anniv-clock-value" id="annivMinutes">—</span><span class="anniv-clock-label">Minutos</span></div>
+        <div class="anniv-clock-cell"><span class="anniv-clock-value" id="annivSeconds">—</span><span class="anniv-clock-label">Segundos</span></div>
+      </div>
+    </section>
+    <div class="anniv-footer" contenteditable="false"></div>
+  </main>
+  <footer hidden>Hecho para ti, con todo mi amor. ♡ <span id="footerName">Para ti.</span></footer>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
