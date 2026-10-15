@@ -107,7 +107,7 @@
         triedAlternativeExtension = true;
         img.src = photoPath + (img.src.toLowerCase().endsWith('.jpg') ? '.jpeg' : '.jpg');
       });
-      img.src = photoPath + '.jpg';
+      img.src = photoPath + '.JPEG';
       slide.append(img, placeholder);
       gallery.append(slide);
     }
